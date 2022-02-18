@@ -23,7 +23,14 @@ body{
     color: #428BE5/*hsl(215, 51%, 70%)*/;
     padding: 20px;
     border: 2px solid hsla(178, 100%, 50%, 0.1);
-    box-shadow: 20px 20px 0px 5px rgba(0, 255, 247, 0.1);
+    box-shadow: 
+        20px 20px 0px 5px rgba(0, 255, 247, 0.1),
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.04),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.049),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.052),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.053),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.056),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 .result {
     padding: 0 10px;
@@ -54,7 +61,7 @@ body{
     font-size: 1.8rem;
     margin-bottom: 15px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto);
 }
 .operator, .number, .empty {
     margin: 7px 10px;
@@ -91,23 +98,28 @@ body{
 }
 @media screen and (max-width: 445px) {
     .calculator{
-        width: 100%;
+        width: 100vw;
         height: 100vh;
-
+        padding: 10px;
         border: 0;
         margin-top: 30px;
         box-shadow: none;
     }
+    .result {
+        margin-right: 20px;
+    }
+    .output__value {
+        font-size: 5.5rem;
+    }
     .dv{
-        width: 95%;
-        margin: auto;
+        width: 100%;
     }
     .keyboard {
-        font-size: 1.5rem;
-        width: 45px;
-        height: 45px;
+        font-size: 2rem;
     }
 }
-/*@media screen and (max-width: 245px) {
-
-}*/
+@media  screen and (max-width: 340px) {
+    .result {
+        margin-right: 15px;
+    }
+}
