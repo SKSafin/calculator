@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="styles.css"/>
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="result">
+                <div class="history">
+                    <p class='history__value' id="history-value"></p>
+                </div>
+                <div class="output">
+                    <p class='output__value' id="output-value">0</p>
+                </div>
+            </div>
+            <div class="dv"></div>
+            <div class="keyboard">
+                <div class="operator-gp-1">
+                    <div class="operator" id="clear">C</div>
+                    <div class="operator" id="backspace">CE</div>
+                    <div class="operator" id="%">%</div>
+                    <div class="operator" id="/">&#247;</div>
+                </div>
+                <div class="operator-gp-2">
+                    <div class="operator" id="*">&times;</div>
+                    <div class="operator" id="-">-</div>
+                    <div class="operator" id="+">+</div>
+                    <div class="operator" id="equals">=</div>
+                </div>
+                <div class="numpad">
+                    <div class="number" id="7">7</div>
+                    <div class="number" id="8">8</div>
+                    <div class="number" id="9">9</div>
+                    <div class="number" id="4">4</div>
+                    <div class="number" id="5">5</div>
+                    <div class="number" id="6">6</div>
+                    <div class="number" id="1">1</div>
+                    <div class="number" id="2">2</div>
+                    <div class="number" id="3">3</div>
+                    <div class="number zero" id="zero">0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
