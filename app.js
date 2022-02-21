@@ -1,3 +1,6 @@
+window.onload=function() {
+    document.getElementById("my_audio").play();
+}
 var sum = 0, num = 0, syntax = "", syntaxToPrint = "";
 function printsyntax() {
     document.getElementById("syntax-value").innerText = syntaxToPrint;
@@ -37,6 +40,8 @@ operators.forEach(x=> {
             printsyntax();
             printOutput(sum);
             num = "";
+            var sound = new Audio("audio/button_sound.mp3");
+            sound.play();
         }else {
             let output = reverseFormat(getOutput());
             if(output == 0 && syntax != ""){
